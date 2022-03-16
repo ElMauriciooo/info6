@@ -5,7 +5,7 @@
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">Well never share your email with anyone else.</div>
+        <div id="emailHelp" class="form-text">Well never share your email with anyone else. </div>
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -17,4 +17,12 @@
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form> 
+
+    <form action="" method="post">
+      <div class="form-group">
+         <label for="title">Titulo</label>
+         <input type="text" class="form-control" name="title" id="title">
+       </div>
+       
+    </form>
 @endsection

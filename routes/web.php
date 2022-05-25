@@ -18,7 +18,16 @@ use App\Http\Controllers\PostController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::resource('/post',PostController::class);
+Route::middleware(['admin'])->group(function(){
+    Route::resource('/post',PostController::class);
+
+});
+/*/
+Route::get('/categories', function(){
+    return view('categories');
+});
+*/
+
 Route::resource('/categories',CategoriesController::class);
 Auth::routes();
 
